@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XYJSAPI_Example' do
+  pod 'XYJSAPI', :path => '../'
+
+  target 'XYJSAPI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
