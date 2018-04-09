@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XYJSAPI'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'XYJSAPI 是js桥'
 
 
@@ -16,16 +16,32 @@ Add long description of the pod here.Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'XYJSAPI/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'XYJSAPI' => ['XYJSAPI/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.source_files = 'XYJSAPI/Classes/JSAPIService/*.{h,m}'
   s.dependency 'AFNetworking'
   s.dependency 'MJExtension'
   s.dependency 'AMapLocation-NO-IDFA'
   s.requires_arc = true
+  
+  s.subspec 'Components' do |ss|
+      ss.source_files = 'XYJSAPI/Classes/JSAPIService/Components/**/*'
+  end
+  
+  s.subspec 'Controller' do |ss|
+      ss.source_files = 'XYJSAPI/Classes/JSAPIService/Controller/**/*'
+  end
+  s.subspec 'Filter' do |ss|
+      ss.source_files = 'XYJSAPI/Classes/JSAPIService/Filter/**/*'
+  end
+  s.subspec 'Lib' do |ss|
+      ss.source_files = 'XYJSAPI/Classes/JSAPIService/Lib/**/*'
+  end
+  s.subspec 'Model' do |ss|
+      ss.source_files = 'XYJSAPI/Classes/JSAPIService/Model/**/*'
+  end
+  s.subspec 'Service' do |ss|
+      ss.source_files = 'XYJSAPI/Classes/JSAPIService/Service/**/*'
+  end
+  s.subspec 'Util' do |ss|
+      ss.source_files = 'XYJSAPI/Classes/JSAPIService/Util/**/*'
+  end
 end
