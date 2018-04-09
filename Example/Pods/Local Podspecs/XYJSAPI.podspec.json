@@ -1,0 +1,22 @@
+{
+  "name": "XYJSAPI",
+  "version": "0.1.0",
+  "summary": "A short description of XYJSAPI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/CouldNotFindObject/XYJSAPI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "CouldNotFindObject": "1848184115@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/CouldNotFindObject/XYJSAPI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XYJSAPI/Classes/**/*"
+}

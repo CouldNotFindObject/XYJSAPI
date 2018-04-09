@@ -1,0 +1,6 @@
+framework module XYJSAPI {
+  umbrella header "XYJSAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
