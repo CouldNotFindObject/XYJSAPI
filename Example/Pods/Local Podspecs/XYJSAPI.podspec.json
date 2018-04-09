@@ -1,8 +1,8 @@
 {
   "name": "XYJSAPI",
   "version": "0.1.0",
-  "summary": "A short description of XYJSAPI.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "XYJSAPI 是js桥",
+  "description": "Add long description of the pod here.Add long description of the pod here.",
   "homepage": "https://github.com/CouldNotFindObject/XYJSAPI",
   "license": {
     "type": "MIT",

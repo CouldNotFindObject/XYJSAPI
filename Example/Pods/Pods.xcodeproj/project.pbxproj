@@ -11,7 +11,6 @@
 		4E6461DF2B3E5280DFD0DBDDA6A4EB8E /* XYJSAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2845DA4D412F74369AE26D0C0CE7D7 /* XYJSAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4497A1819992F23D44B36AE60253CDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A76A814D5B39E008A6D938B624405E13 /* Pods-XYJSAPI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 001AF5BC9B8BC430D411A46EB9214BBD /* Pods-XYJSAPI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C95FAD720490176CE5D4898A8D9BBA46 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAAB35111C847F9D1EB90BD397A3FD /* ReplaceMe.m */; };
 		C9BA09D7E42E3D8FB8C53B3AD45A0A7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D93B0755EB25CAB40562C491657921A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F01DB72489F930F94E4E71465321E63F /* XYJSAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F77CDFF6C47061DCFB00FA80D35301A3 /* XYJSAPI-dummy.m */; };
@@ -32,36 +31,80 @@
 /* Begin PBXFileReference section */
 		001AF5BC9B8BC430D411A46EB9214BBD /* Pods-XYJSAPI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XYJSAPI_Example-umbrella.h"; sourceTree = "<group>"; };
 		07E9EBCBE97B2BED7E47020C852A4C03 /* Pods-XYJSAPI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XYJSAPI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		10FFF75E552428BDD32C5593AC6B0909 /* Pods_XYJSAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XYJSAPI_Example.framework; path = "Pods-XYJSAPI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1832F95B3F2A7F7A2B483132D0CDFDB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		10FFF75E552428BDD32C5593AC6B0909 /* Pods_XYJSAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYJSAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1832F95B3F2A7F7A2B483132D0CDFDB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1C5ED5A02A78A88386A69D01BC898CFA /* Pods-XYJSAPI_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XYJSAPI_Example-resources.sh"; sourceTree = "<group>"; };
 		1D2845DA4D412F74369AE26D0C0CE7D7 /* XYJSAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XYJSAPI-umbrella.h"; sourceTree = "<group>"; };
 		3165FE95251A0FA205EA9DFB33E73AB6 /* Pods-XYJSAPI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XYJSAPI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3EA9EA51AFDB9D0145FD1F99316FEB7A /* XYJSAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XYJSAPI-prefix.pch"; sourceTree = "<group>"; };
 		407C2FC189780E21C203DCD18E90BC5C /* Pods-XYJSAPI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XYJSAPI_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4A5B0A46E3A8229A65180CADE8EB0980 /* Pods-XYJSAPI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XYJSAPI_Example.modulemap"; sourceTree = "<group>"; };
+		4A5B0A46E3A8229A65180CADE8EB0980 /* Pods-XYJSAPI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-XYJSAPI_Example.modulemap"; sourceTree = "<group>"; };
 		4B82B6CD00CA9EA230D255AD278DA0B5 /* Pods-XYJSAPI_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XYJSAPI_Tests-resources.sh"; sourceTree = "<group>"; };
-		4E63AC2235DD87C682B6A4A8DF6C4FDE /* Pods-XYJSAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XYJSAPI_Tests.modulemap"; sourceTree = "<group>"; };
+		4E63AC2235DD87C682B6A4A8DF6C4FDE /* Pods-XYJSAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-XYJSAPI_Tests.modulemap"; sourceTree = "<group>"; };
 		572F172A46102059B5A7556BFFFB8B4E /* Pods-XYJSAPI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XYJSAPI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5A001FDC3F6226065B74E2995967123B /* XYJSAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XYJSAPI.framework; path = XYJSAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A001FDC3F6226065B74E2995967123B /* XYJSAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XYJSAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		634067E5E195A128DA4BA1636DA1813B /* Pods-XYJSAPI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XYJSAPI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		642F11A9B88C06B92D6E9C43158DECFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65520C64E1CA1EC2A3ACD1D4CEED34A8 /* Pods-XYJSAPI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XYJSAPI_Example-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7479B74333EC4ED2FD75FF3F609B2D23 /* Pods-XYJSAPI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XYJSAPI_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7EE35E6BE35E46DAB3D2B42D30281984 /* Pods-XYJSAPI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XYJSAPI_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8117F09ACF6E907B0AEE5E58180011D3 /* Pods_XYJSAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XYJSAPI_Tests.framework; path = "Pods-XYJSAPI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8117F09ACF6E907B0AEE5E58180011D3 /* Pods_XYJSAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYJSAPI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD3FF46ACD0E685EB1761C57308A4B4 /* XYJSAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XYJSAPI.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A018BED8D244B3DE89D1F8174F1C7F8 /* Pods-XYJSAPI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XYJSAPI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9BC9521BC3264B4799B0EA1756EE01E4 /* XYJSAPI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XYJSAPI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BC9521BC3264B4799B0EA1756EE01E4 /* XYJSAPI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = XYJSAPI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B0BA8012A65D55F33CA0D5D865BEC996 /* Pods-XYJSAPI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XYJSAPI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B4256815207B1DBE0073CCBC /* ColorUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
+		B4256816207B1DBE0073CCBC /* StringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		B4256817207B1DBE0073CCBC /* ColorUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
+		B4256818207B1DBE0073CCBC /* StringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		B4256819207B1DBE0073CCBC /* JSAPIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSAPIService.h; sourceTree = "<group>"; };
+		B425681B207B1DBE0073CCBC /* BaseContainerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseContainerController.m; sourceTree = "<group>"; };
+		B425681C207B1DBE0073CCBC /* JSABaseWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSABaseWebViewController.h; sourceTree = "<group>"; };
+		B425681D207B1DBE0073CCBC /* WKContainerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKContainerController.h; sourceTree = "<group>"; };
+		B425681E207B1DBE0073CCBC /* BaseContainerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseContainerController.h; sourceTree = "<group>"; };
+		B425681F207B1DBE0073CCBC /* JSABaseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSABaseWebViewController.m; sourceTree = "<group>"; };
+		B4256820207B1DBE0073CCBC /* WKContainerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKContainerController.m; sourceTree = "<group>"; };
+		B4256822207B1DBE0073CCBC /* LocationComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationComponent.h; sourceTree = "<group>"; };
+		B4256823207B1DBE0073CCBC /* BaseComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseComponent.h; sourceTree = "<group>"; };
+		B4256825207B1DBE0073CCBC /* NavigationComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationComponent.m; sourceTree = "<group>"; };
+		B4256826207B1DBE0073CCBC /* NavigationComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationComponent.h; sourceTree = "<group>"; };
+		B4256827207B1DBE0073CCBC /* UserComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserComponent.h; sourceTree = "<group>"; };
+		B4256828207B1DBE0073CCBC /* LocationComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationComponent.m; sourceTree = "<group>"; };
+		B4256829207B1DBE0073CCBC /* BaseComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseComponent.m; sourceTree = "<group>"; };
+		B425682A207B1DBE0073CCBC /* UserComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserComponent.m; sourceTree = "<group>"; };
+		B425682C207B1DBE0073CCBC /* ComponentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentModel.h; sourceTree = "<group>"; };
+		B425682D207B1DBE0073CCBC /* JSBLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBLocation.m; sourceTree = "<group>"; };
+		B425682E207B1DBE0073CCBC /* FilterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterModel.h; sourceTree = "<group>"; };
+		B425682F207B1DBE0073CCBC /* DispatcherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatcherModel.m; sourceTree = "<group>"; };
+		B4256830207B1DBE0073CCBC /* ComponentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentModel.m; sourceTree = "<group>"; };
+		B4256831207B1DBE0073CCBC /* DispatcherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatcherModel.h; sourceTree = "<group>"; };
+		B4256832207B1DBE0073CCBC /* FilterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterModel.m; sourceTree = "<group>"; };
+		B4256833207B1DBE0073CCBC /* JSBLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBLocation.h; sourceTree = "<group>"; };
+		B4256834207B1DBE0073CCBC /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		B4256837207B1DBE0073CCBC /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		B4256838207B1DBE0073CCBC /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		B4256839207B1DBE0073CCBC /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		B425683A207B1DBE0073CCBC /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		B425683B207B1DBE0073CCBC /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		B425683C207B1DBE0073CCBC /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		B425683D207B1DBE0073CCBC /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		B425683E207B1DBE0073CCBC /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		B425683F207B1DBE0073CCBC /* JSAPIService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSAPIService.m; sourceTree = "<group>"; };
+		B4256841207B1DBE0073CCBC /* PreLoadFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreLoadFilter.h; sourceTree = "<group>"; };
+		B4256842207B1DBE0073CCBC /* PreLoadFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreLoadFilter.m; sourceTree = "<group>"; };
+		B4256845207B1DBE0073CCBC /* GlobalDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDataService.h; sourceTree = "<group>"; };
+		B4256846207B1DBE0073CCBC /* GlobalDataService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalDataService.m; sourceTree = "<group>"; };
+		B4256847207B1DBE0073CCBC /* ComponentDispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentDispatcher.m; sourceTree = "<group>"; };
+		B4256849207B1DBE0073CCBC /* LocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		B425684A207B1DBE0073CCBC /* LocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		B425684B207B1DBE0073CCBC /* ComponentDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentDispatcher.h; sourceTree = "<group>"; };
 		B4AC1221B1012F62C6AF2FE7038104F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC9A3D8CCDB4BE2C8937C7AE6A65E5DC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		CC807A0579E1EA65551CD8380CE642D2 /* XYJSAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XYJSAPI.modulemap; sourceTree = "<group>"; };
+		BC9A3D8CCDB4BE2C8937C7AE6A65E5DC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CC807A0579E1EA65551CD8380CE642D2 /* XYJSAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XYJSAPI.modulemap; sourceTree = "<group>"; };
 		D4DBF828D8ED34C04A886B87D344D55A /* Pods-XYJSAPI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XYJSAPI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D6F9DBB41339BEDA77719C12ED83471A /* Pods-XYJSAPI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XYJSAPI_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DADAAB35111C847F9D1EB90BD397A3FD /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = XYJSAPI/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		E55B644F22F8789C4B78B107ADD7A2E5 /* Pods-XYJSAPI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XYJSAPI_Tests-dummy.m"; sourceTree = "<group>"; };
 		E6B4B1EA332A12E5D1D8416219D59280 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F77CDFF6C47061DCFB00FA80D35301A3 /* XYJSAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XYJSAPI-dummy.m"; sourceTree = "<group>"; };
@@ -166,6 +209,147 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		B4256813207B1DBE0073CCBC /* JSAPIService */ = {
+			isa = PBXGroup;
+			children = (
+				B4256814207B1DBE0073CCBC /* Util */,
+				B4256819207B1DBE0073CCBC /* JSAPIService.h */,
+				B425681A207B1DBE0073CCBC /* Controller */,
+				B4256821207B1DBE0073CCBC /* Components */,
+				B425682B207B1DBE0073CCBC /* Model */,
+				B4256835207B1DBE0073CCBC /* Lib */,
+				B425683F207B1DBE0073CCBC /* JSAPIService.m */,
+				B4256840207B1DBE0073CCBC /* Filter */,
+				B4256843207B1DBE0073CCBC /* Service */,
+			);
+			name = JSAPIService;
+			path = XYJSAPI/Classes/JSAPIService;
+			sourceTree = "<group>";
+		};
+		B4256814207B1DBE0073CCBC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B4256815207B1DBE0073CCBC /* ColorUtil.h */,
+				B4256816207B1DBE0073CCBC /* StringUtil.h */,
+				B4256817207B1DBE0073CCBC /* ColorUtil.m */,
+				B4256818207B1DBE0073CCBC /* StringUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B425681A207B1DBE0073CCBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B425681B207B1DBE0073CCBC /* BaseContainerController.m */,
+				B425681C207B1DBE0073CCBC /* JSABaseWebViewController.h */,
+				B425681D207B1DBE0073CCBC /* WKContainerController.h */,
+				B425681E207B1DBE0073CCBC /* BaseContainerController.h */,
+				B425681F207B1DBE0073CCBC /* JSABaseWebViewController.m */,
+				B4256820207B1DBE0073CCBC /* WKContainerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4256821207B1DBE0073CCBC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B4256822207B1DBE0073CCBC /* LocationComponent.h */,
+				B4256823207B1DBE0073CCBC /* BaseComponent.h */,
+				B4256824207B1DBE0073CCBC /* Navigation */,
+				B4256827207B1DBE0073CCBC /* UserComponent.h */,
+				B4256828207B1DBE0073CCBC /* LocationComponent.m */,
+				B4256829207B1DBE0073CCBC /* BaseComponent.m */,
+				B425682A207B1DBE0073CCBC /* UserComponent.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B4256824207B1DBE0073CCBC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B4256825207B1DBE0073CCBC /* NavigationComponent.m */,
+				B4256826207B1DBE0073CCBC /* NavigationComponent.h */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B425682B207B1DBE0073CCBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B425682C207B1DBE0073CCBC /* ComponentModel.h */,
+				B425682D207B1DBE0073CCBC /* JSBLocation.m */,
+				B425682E207B1DBE0073CCBC /* FilterModel.h */,
+				B425682F207B1DBE0073CCBC /* DispatcherModel.m */,
+				B4256830207B1DBE0073CCBC /* ComponentModel.m */,
+				B4256831207B1DBE0073CCBC /* DispatcherModel.h */,
+				B4256832207B1DBE0073CCBC /* FilterModel.m */,
+				B4256833207B1DBE0073CCBC /* JSBLocation.h */,
+				B4256834207B1DBE0073CCBC /* config.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4256835207B1DBE0073CCBC /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B4256836207B1DBE0073CCBC /* WebViewJavascriptBridge */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		B4256836207B1DBE0073CCBC /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				B4256837207B1DBE0073CCBC /* WebViewJavascriptBridgeBase.m */,
+				B4256838207B1DBE0073CCBC /* WKWebViewJavascriptBridge.m */,
+				B4256839207B1DBE0073CCBC /* WebViewJavascriptBridge.m */,
+				B425683A207B1DBE0073CCBC /* WebViewJavascriptBridge_JS.h */,
+				B425683B207B1DBE0073CCBC /* WebViewJavascriptBridgeBase.h */,
+				B425683C207B1DBE0073CCBC /* WebViewJavascriptBridge_JS.m */,
+				B425683D207B1DBE0073CCBC /* WebViewJavascriptBridge.h */,
+				B425683E207B1DBE0073CCBC /* WKWebViewJavascriptBridge.h */,
+			);
+			path = WebViewJavascriptBridge;
+			sourceTree = "<group>";
+		};
+		B4256840207B1DBE0073CCBC /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				B4256841207B1DBE0073CCBC /* PreLoadFilter.h */,
+				B4256842207B1DBE0073CCBC /* PreLoadFilter.m */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		B4256843207B1DBE0073CCBC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B4256844207B1DBE0073CCBC /* GlobalDataService */,
+				B4256847207B1DBE0073CCBC /* ComponentDispatcher.m */,
+				B4256848207B1DBE0073CCBC /* LocationService */,
+				B425684B207B1DBE0073CCBC /* ComponentDispatcher.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B4256844207B1DBE0073CCBC /* GlobalDataService */ = {
+			isa = PBXGroup;
+			children = (
+				B4256845207B1DBE0073CCBC /* GlobalDataService.h */,
+				B4256846207B1DBE0073CCBC /* GlobalDataService.m */,
+			);
+			path = GlobalDataService;
+			sourceTree = "<group>";
+		};
+		B4256848207B1DBE0073CCBC /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				B4256849207B1DBE0073CCBC /* LocationService.m */,
+				B425684A207B1DBE0073CCBC /* LocationService.h */,
+			);
+			path = LocationService;
+			sourceTree = "<group>";
+		};
 		B78F1CF20F87A60D39812780B7E69A7A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +370,7 @@
 		CADD97CF66D0DE68A4EE31625EC2C99B /* XYJSAPI */ = {
 			isa = PBXGroup;
 			children = (
-				DADAAB35111C847F9D1EB90BD397A3FD /* ReplaceMe.m */,
+				B4256813207B1DBE0073CCBC /* JSAPIService */,
 				A4642BA12F9559B4583AD76F83E62CEC /* Pod */,
 				4E133DBFC993D982EC4560B9FCE75531 /* Support Files */,
 			);
@@ -351,7 +535,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C95FAD720490176CE5D4898A8D9BBA46 /* ReplaceMe.m in Sources */,
 				F01DB72489F930F94E4E71465321E63F /* XYJSAPI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

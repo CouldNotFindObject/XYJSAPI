@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'XYJSAPI'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of XYJSAPI.'
+  s.summary          = 'XYJSAPI 是js桥'
 
 
   s.description      = <<-DESC
@@ -24,5 +24,8 @@ Add long description of the pod here.Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking'
+  s.dependency 'MJExtension'
+  s.dependency 'AMapLocation-NO-IDFA'
+  s.requires_arc = true
 end

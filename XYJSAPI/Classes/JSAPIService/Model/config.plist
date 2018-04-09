@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>componentServiceMethodName</key>
+		<string>setTitle:</string>
+		<key>componentServiceClassName</key>
+		<string>NavigationComponent</string>
+		<key>jsMethod</key>
+		<string>ui.navigation.setTitle</string>
+	</dict>
+	<dict>
+		<key>componentServiceMethodName</key>
+		<string>close:</string>
+		<key>componentServiceClassName</key>
+		<string>NavigationComponent</string>
+		<key>jsMethod</key>
+		<string>ui.navigation.close</string>
+	</dict>
+	<dict>
+		<key>componentServiceMethodName</key>
+		<string>goBack:</string>
+		<key>componentServiceClassName</key>
+		<string>NavigationComponent</string>
+		<key>jsMethod</key>
+		<string>ui.navigation.goBack</string>
+	</dict>
+	<dict>
+		<key>componentServiceMethodName</key>
+		<string>hidden:</string>
+		<key>componentServiceClassName</key>
+		<string>NavigationComponent</string>
+		<key>jsMethod</key>
+		<string>ui.navigation.hidden</string>
+	</dict>
+	<dict>
+		<key>componentServiceMethodName</key>
+		<string>show:</string>
+		<key>componentServiceClassName</key>
+		<string>NavigationComponent</string>
+		<key>jsMethod</key>
+		<string>ui.navigation.show</string>
+	</dict>
+	<dict>
+		<key>componentServiceMethodName</key>
+		<string>get:</string>
+		<key>componentServiceClassName</key>
+		<string>UserComponent</string>
+		<key>jsMethod</key>
+		<string>data.user.get</string>
+	</dict>
+	<dict>
+		<key>componentServiceMethodName</key>
+		<string>getLocation:</string>
+		<key>componentServiceClassName</key>
+		<string>LocationComponent</string>
+		<key>jsMethod</key>
+		<string>data.map.getLocation</string>
+	</dict>
+</array>
+</plist>
