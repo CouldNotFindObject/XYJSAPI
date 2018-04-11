@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XYJSAPI'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'XYJSAPI 是js桥'
 
 
@@ -17,10 +17,11 @@ Add long description of the pod here.Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'XYJSAPI/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'XYJSAPI' => ['XYJSAPI/Assets/*.png']
-  # }
+  s.public_header_files = 'XYJSAPI/**/*.h'
+
+  s.resource_bundles = {
+    'XYJSAPI' => ['XYJSAPI/Classes/JSAPIService/Model/config.plst']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

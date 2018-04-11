@@ -7,12 +7,21 @@
 //
 
 #import "JSBAppDelegate.h"
+//#import <XYJSAPI/XYJSAPI>
 
 @implementation JSBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+        [self.window makeKeyAndVisible];
+    //    [[NSUserDefaults standardUserDefaults] removeObjectForKey:enterBackTimeKey];
+    //    [NetworkReachabilityService startMonitorNetStatus];
+    //    [self startAutoManager];
+    //    [VoiceService creatVoiceService];
+    
+    //    [PushService application:application startWithOpthion:launchOptions];
     return YES;
 }
 

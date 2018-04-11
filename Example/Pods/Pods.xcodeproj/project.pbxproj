@@ -100,6 +100,7 @@
 		B4256849207B1DBE0073CCBC /* LocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
 		B425684A207B1DBE0073CCBC /* LocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
 		B425684B207B1DBE0073CCBC /* ComponentDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentDispatcher.h; sourceTree = "<group>"; };
+		B425684C207E165E0073CCBC /* XYJSAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XYJSAPI.h; path = XYJSAPI/XYJSAPI.h; sourceTree = "<group>"; };
 		B4AC1221B1012F62C6AF2FE7038104F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9A3D8CCDB4BE2C8937C7AE6A65E5DC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CC807A0579E1EA65551CD8380CE642D2 /* XYJSAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XYJSAPI.modulemap; sourceTree = "<group>"; };
@@ -370,6 +371,7 @@
 		CADD97CF66D0DE68A4EE31625EC2C99B /* XYJSAPI */ = {
 			isa = PBXGroup;
 			children = (
+				B425684C207E165E0073CCBC /* XYJSAPI.h */,
 				B4256813207B1DBE0073CCBC /* JSAPIService */,
 				A4642BA12F9559B4583AD76F83E62CEC /* Pod */,
 				4E133DBFC993D982EC4560B9FCE75531 /* Support Files */,
