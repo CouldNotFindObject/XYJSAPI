@@ -1,6 +1,6 @@
 {
   "name": "XYJSAPI",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "XYJSAPI 是js桥",
   "description": "Add long description of the pod here.Add long description of the pod here.",
   "homepage": "https://github.com/CouldNotFindObject/XYJSAPI",
@@ -13,18 +13,14 @@
   },
   "source": {
     "git": "https://github.com/CouldNotFindObject/XYJSAPI.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "XYJSAPI/Classes/**/*",
   "public_header_files": "XYJSAPI/**/*.h",
-  "resource_bundles": {
-    "XYJSAPI": [
-      "XYJSAPI/Classes/JSAPIService/Model/config.plst"
-    ]
-  },
+  "resources": "XYJSAPI/Classes/JSAPIService/Model/config.plist",
   "dependencies": {
     "AFNetworking": [
 

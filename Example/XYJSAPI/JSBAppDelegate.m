@@ -7,7 +7,6 @@
 //
 
 #import "JSBAppDelegate.h"
-//#import <XYJSAPI/XYJSAPI>
 
 @implementation JSBAppDelegate
 

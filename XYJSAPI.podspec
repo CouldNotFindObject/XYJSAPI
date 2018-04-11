@@ -19,9 +19,7 @@ Add long description of the pod here.Add long description of the pod here.
   s.source_files = 'XYJSAPI/Classes/**/*'
   s.public_header_files = 'XYJSAPI/**/*.h'
 
-  s.resource_bundles = {
-    'XYJSAPI' => ['XYJSAPI/Classes/JSAPIService/Model/config.plst']
-  }
+  s.resource = 'XYJSAPI/Classes/JSAPIService/Model/config.plist'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
