@@ -48,7 +48,11 @@
 
 - (NSArray<ComponentModel *> *)componentConfigs{
     if (!_componentConfigs) {
-        _componentConfigs = [ComponentModel mj_objectArrayWithFilename:@"config.plist"];
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSURL *url = [bundle URLForResource:@"XYJSAPIBundel" withExtension:@"bundle"];
+        bundle = [NSBundle bundleWithURL:url];
+        NSString *file = [bundle pathForResource:@"config.plist" ofType:nil];
+        _componentConfigs = [ComponentModel mj_objectArrayWithFile:file];
     }
     return _componentConfigs;
 }
