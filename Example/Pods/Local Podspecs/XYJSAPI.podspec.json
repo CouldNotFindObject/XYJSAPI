@@ -20,7 +20,7 @@
   },
   "source_files": "XYJSAPI/Classes/**/*",
   "public_header_files": "XYJSAPI/**/*.h",
-  "resources": "XYJSAPI/Classes/JSAPIService/Model/config.plist",
+  "resources": "XYJSAPI/Assets/*",
   "dependencies": {
     "AFNetworking": [
 
