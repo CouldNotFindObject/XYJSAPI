@@ -16,6 +16,11 @@
  */
 @property(nonatomic,copy)NSString * renderUrl;
 
+/**
+ js桥
+ */
+@property(nonatomic,strong,readonly)WebViewJavascriptBridge* bridge;
+
 
 
 /**

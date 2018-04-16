@@ -13,7 +13,7 @@
 @interface BaseContainerController ()
 @property(nonatomic,strong)PreLoadFilter * filter;
 @property(nonatomic,strong)ComponentDispatcher * dispatcher;
-@property(nonatomic,strong)WebViewJavascriptBridge* bridge;
+
 @end
 
 @implementation BaseContainerController
