@@ -54,8 +54,31 @@
     //注册桥方法
     [self registerHandler];
     
+    //注册自定义桥方法
+    [self registerCustomMethodWithBridge:self.bridge];
+    
     //加载页面
     [self renderWeb];
+    
+}
+
+
+- (void)registerCustomMethodWithBridge:(WebViewJavascriptBridge *)bridge{
+    //注册自定义桥方法
+    //子类需重写此方法 -- 可以同时注册多个
+    
+    /**
+     注册自定义方法
+     
+     @param data 自定义方法名称
+     @param responseCallback js端传递过来的参数
+     @return js端传递回来的回调
+     */
+//    [bridge registerHandler:@"custom_jsCallNative_call" handler:^(id data, WVJBResponseCallback responseCallback) {
+//        NSLog(@"%@",data);//打印js传递过来的参数
+//        NSDictionary * result = @{};//生成回调结果
+//        responseCallback(result);//进行回调
+//    }];
     
 }
 

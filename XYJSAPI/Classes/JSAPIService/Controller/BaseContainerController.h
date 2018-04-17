@@ -29,7 +29,10 @@
  @param orientation 容器横竖屏参数
  */
 - (void)changeDeviceOrientation:(UIInterfaceOrientation)orientation;
-
+/**
+ 可以在此方法中自行注册
+ */
+- (void)registerCustomMethodWithBridge:(WebViewJavascriptBridge *)bridge;
 - (void)renderWeb;
 - (id)getContainerWebView;
 @end
