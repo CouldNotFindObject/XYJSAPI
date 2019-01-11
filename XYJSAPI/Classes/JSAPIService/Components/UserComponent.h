@@ -10,5 +10,5 @@
 
 @interface UserComponent : BaseComponent
 + (void)setAdAccount:(NSString *)adAccount;
-
++ (void)setValue:(nonnull NSObject *)value forKey:(nonnull NSString *)key;
 @end

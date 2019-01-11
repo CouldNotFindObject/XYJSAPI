@@ -16,6 +16,7 @@ static GlobalDataService *mgr = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         mgr = [GlobalDataService new];
+        mgr.storeDic = [NSMutableDictionary dictionary];
     });
     return mgr;
 }

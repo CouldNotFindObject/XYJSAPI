@@ -10,5 +10,6 @@
 
 @interface GlobalDataService : NSObject
 @property (nonatomic, copy) NSString *adAccount;
+@property (nonatomic, strong) NSMutableDictionary *storeDic;
 + (instancetype)shardService;
 @end
