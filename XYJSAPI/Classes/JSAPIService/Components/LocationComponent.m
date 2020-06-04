@@ -17,7 +17,7 @@
     NSLog(@"%@ %s",model.data,__func__);
     [LocationService singleRequestLocation:^(NSError *error, CLLocation *location, AMapLocationReGeocode *reGeocode) {
         if (error) {
-            [model callFailre:[error mj_JSONObject]];
+            [model callFailre:error.description];
             return ;
         }
         JSBLocation *jsLocation = [[JSBLocation alloc] initWithLocation:location reGeocode:reGeocode];

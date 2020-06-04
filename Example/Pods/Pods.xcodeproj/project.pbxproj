@@ -213,15 +213,15 @@
 		B4256813207B1DBE0073CCBC /* JSAPIService */ = {
 			isa = PBXGroup;
 			children = (
-				B4256814207B1DBE0073CCBC /* Util */,
-				B4256819207B1DBE0073CCBC /* JSAPIService.h */,
-				B425681A207B1DBE0073CCBC /* Controller */,
 				B4256821207B1DBE0073CCBC /* Components */,
-				B425682B207B1DBE0073CCBC /* Model */,
-				B4256835207B1DBE0073CCBC /* Lib */,
-				B425683F207B1DBE0073CCBC /* JSAPIService.m */,
+				B425681A207B1DBE0073CCBC /* Controller */,
 				B4256840207B1DBE0073CCBC /* Filter */,
+				B4256819207B1DBE0073CCBC /* JSAPIService.h */,
+				B425683F207B1DBE0073CCBC /* JSAPIService.m */,
+				B4256835207B1DBE0073CCBC /* Lib */,
+				B425682B207B1DBE0073CCBC /* Model */,
 				B4256843207B1DBE0073CCBC /* Service */,
+				B4256814207B1DBE0073CCBC /* Util */,
 			);
 			name = JSAPIService;
 			path = XYJSAPI/Classes/JSAPIService;
@@ -231,8 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				B4256815207B1DBE0073CCBC /* ColorUtil.h */,
-				B4256816207B1DBE0073CCBC /* StringUtil.h */,
 				B4256817207B1DBE0073CCBC /* ColorUtil.m */,
+				B4256816207B1DBE0073CCBC /* StringUtil.h */,
 				B4256818207B1DBE0073CCBC /* StringUtil.m */,
 			);
 			path = Util;
@@ -241,11 +241,11 @@
 		B425681A207B1DBE0073CCBC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B425681E207B1DBE0073CCBC /* BaseContainerController.h */,
 				B425681B207B1DBE0073CCBC /* BaseContainerController.m */,
 				B425681C207B1DBE0073CCBC /* JSABaseWebViewController.h */,
-				B425681D207B1DBE0073CCBC /* WKContainerController.h */,
-				B425681E207B1DBE0073CCBC /* BaseContainerController.h */,
 				B425681F207B1DBE0073CCBC /* JSABaseWebViewController.m */,
+				B425681D207B1DBE0073CCBC /* WKContainerController.h */,
 				B4256820207B1DBE0073CCBC /* WKContainerController.m */,
 			);
 			path = Controller;
@@ -254,12 +254,12 @@
 		B4256821207B1DBE0073CCBC /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B4256822207B1DBE0073CCBC /* LocationComponent.h */,
 				B4256823207B1DBE0073CCBC /* BaseComponent.h */,
+				B4256829207B1DBE0073CCBC /* BaseComponent.m */,
+				B4256822207B1DBE0073CCBC /* LocationComponent.h */,
+				B4256828207B1DBE0073CCBC /* LocationComponent.m */,
 				B4256824207B1DBE0073CCBC /* Navigation */,
 				B4256827207B1DBE0073CCBC /* UserComponent.h */,
-				B4256828207B1DBE0073CCBC /* LocationComponent.m */,
-				B4256829207B1DBE0073CCBC /* BaseComponent.m */,
 				B425682A207B1DBE0073CCBC /* UserComponent.m */,
 			);
 			path = Components;
@@ -268,8 +268,8 @@
 		B4256824207B1DBE0073CCBC /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				B4256825207B1DBE0073CCBC /* NavigationComponent.m */,
 				B4256826207B1DBE0073CCBC /* NavigationComponent.h */,
+				B4256825207B1DBE0073CCBC /* NavigationComponent.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -278,14 +278,14 @@
 			isa = PBXGroup;
 			children = (
 				B425682C207B1DBE0073CCBC /* ComponentModel.h */,
-				B425682D207B1DBE0073CCBC /* JSBLocation.m */,
-				B425682E207B1DBE0073CCBC /* FilterModel.h */,
-				B425682F207B1DBE0073CCBC /* DispatcherModel.m */,
 				B4256830207B1DBE0073CCBC /* ComponentModel.m */,
+				B4256834207B1DBE0073CCBC /* config.plist */,
 				B4256831207B1DBE0073CCBC /* DispatcherModel.h */,
+				B425682F207B1DBE0073CCBC /* DispatcherModel.m */,
+				B425682E207B1DBE0073CCBC /* FilterModel.h */,
 				B4256832207B1DBE0073CCBC /* FilterModel.m */,
 				B4256833207B1DBE0073CCBC /* JSBLocation.h */,
-				B4256834207B1DBE0073CCBC /* config.plist */,
+				B425682D207B1DBE0073CCBC /* JSBLocation.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,14 +301,14 @@
 		B4256836207B1DBE0073CCBC /* WebViewJavascriptBridge */ = {
 			isa = PBXGroup;
 			children = (
-				B4256837207B1DBE0073CCBC /* WebViewJavascriptBridgeBase.m */,
-				B4256838207B1DBE0073CCBC /* WKWebViewJavascriptBridge.m */,
-				B4256839207B1DBE0073CCBC /* WebViewJavascriptBridge.m */,
 				B425683A207B1DBE0073CCBC /* WebViewJavascriptBridge_JS.h */,
-				B425683B207B1DBE0073CCBC /* WebViewJavascriptBridgeBase.h */,
 				B425683C207B1DBE0073CCBC /* WebViewJavascriptBridge_JS.m */,
 				B425683D207B1DBE0073CCBC /* WebViewJavascriptBridge.h */,
+				B4256839207B1DBE0073CCBC /* WebViewJavascriptBridge.m */,
+				B425683B207B1DBE0073CCBC /* WebViewJavascriptBridgeBase.h */,
+				B4256837207B1DBE0073CCBC /* WebViewJavascriptBridgeBase.m */,
 				B425683E207B1DBE0073CCBC /* WKWebViewJavascriptBridge.h */,
+				B4256838207B1DBE0073CCBC /* WKWebViewJavascriptBridge.m */,
 			);
 			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
@@ -325,10 +325,10 @@
 		B4256843207B1DBE0073CCBC /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				B4256844207B1DBE0073CCBC /* GlobalDataService */,
-				B4256847207B1DBE0073CCBC /* ComponentDispatcher.m */,
-				B4256848207B1DBE0073CCBC /* LocationService */,
 				B425684B207B1DBE0073CCBC /* ComponentDispatcher.h */,
+				B4256847207B1DBE0073CCBC /* ComponentDispatcher.m */,
+				B4256844207B1DBE0073CCBC /* GlobalDataService */,
+				B4256848207B1DBE0073CCBC /* LocationService */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -345,8 +345,8 @@
 		B4256848207B1DBE0073CCBC /* LocationService */ = {
 			isa = PBXGroup;
 			children = (
-				B4256849207B1DBE0073CCBC /* LocationService.m */,
 				B425684A207B1DBE0073CCBC /* LocationService.h */,
+				B4256849207B1DBE0073CCBC /* LocationService.m */,
 			);
 			path = LocationService;
 			sourceTree = "<group>";
@@ -502,6 +502,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;

@@ -86,6 +86,7 @@ static LocationService *_mgr =nil;
     [[LocationService sharedService].locationManager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
         if (error) {
             [_mgr amapLocationManager:nil didFailWithError:error];
+            return ;
         }
         [_mgr amapLocationManager:nil didUpdateLocation:location reGeocode:regeocode];
     }];
