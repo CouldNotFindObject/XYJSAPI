@@ -20,6 +20,7 @@
 + (instancetype)filterWithContainer:(BaseContainerController *)container{
     PreLoadFilter * filter = [[self alloc]init];
     filter.container = container;
+	filter.delegate = container;
     filter.filterModel = [[FilterModel alloc]initWithUrl:container.renderUrl];
     return filter;
 }
@@ -34,7 +35,13 @@
 
 
 - (void)didFilter{
+	if (_delegate && [_delegate respondsToSelector:@selector(willPreLoadFilter:)]) {
+		[_delegate willPreLoadFilter:_filterModel];
+	}
     if (self.filterModel == nil) {
+		if (_delegate && [_delegate respondsToSelector:@selector(preLoadCompleteFilter:)]) {
+			[_delegate preLoadCompleteFilter:_filterModel];
+		}
         return;
     }
     
@@ -53,7 +60,8 @@
         [self.container.navigationController setNavigationBarHidden:YES animated:YES];
     }
     
-    
-    
+	if (_delegate && [_delegate respondsToSelector:@selector(preLoadCompleteFilter:)]) {
+		[_delegate preLoadCompleteFilter:_filterModel];
+	}
 }
 @end

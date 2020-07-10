@@ -8,14 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
+#import "PreLoadFilter.h"
 #import "WebViewJavascriptBridge.h"
+@class FilterModel;
 @interface BaseContainerController : UIViewController
-<WKNavigationDelegate>
+<WKNavigationDelegate,PreLoadFilterProtocol>
+
 /**
  需要渲染的URL路径
  */
 @property(nonatomic,copy)NSString * renderUrl;
 
+@property(nonatomic,copy,readonly)NSString *currentRenderUrl;
 /**
  js桥
  */
@@ -35,4 +39,10 @@
 - (void)registerCustomMethodWithBridge:(WebViewJavascriptBridge *)bridge;
 - (void)renderWeb;
 - (id)getContainerWebView;
+- (void)reloadWebview;
+- (BOOL)isNewURLPage;
+- (void)showErroView:(NSString *)reason;
+- (void)hidenErrorView;
+- (void)filterComplete:(FilterModel *)filter;
+- (void)backToIndex
 @end

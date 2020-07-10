@@ -27,6 +27,10 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+	[super viewWillAppear:animated];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -40,6 +44,7 @@
 
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
     NSLog(@"开始加载网页");
+	[self hidenErrorView];
     //开始加载网页时展示出progressView
     self.progressView.hidden = NO;
     //开始加载网页的时候将progressView的Height恢复为1.5倍
@@ -132,7 +137,9 @@
     [self.progressView setProgress:1 animated:NO];
     [self showErroView:error.localizedDescription];
 }
+
 - (void)showErroView:(NSString *)reason{
+	self.webView.hidden = YES;
     if (!_errView) {
         _errView = [[UIView alloc] initWithFrame:self.webView.bounds];
         CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
@@ -160,13 +167,13 @@
         _errView.alpha = 1;
     }
 }
-- (void)reloadWebview{
-    self.errView.alpha = 0;
-//    [self.webView reload];
-    [self renderWeb];
+
+- (void)hidenErrorView{
+	self.errView.alpha = 0;
+	self.webView.hidden = NO;
 }
-- (UIProgressView *)progressView
-{
+
+- (UIProgressView *)progressView{
     if(!_progressView)
     {
         CGFloat y = self.navigationController ? self.navigationController.navigationBar.frame.size.height + self.navigationController.navigationBar.frame.origin.y  : 0;
@@ -184,6 +191,7 @@
 - (void)dealloc {
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
 }
+
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     _progressView.frame = CGRectMake(0, self.webView.bounds.origin.y, self.webView.bounds.size.width, 0);
@@ -198,6 +206,7 @@
     [self presentViewController:alertController animated:YES completion:nil];
     
 }
+
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler{
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:message?:@"" preferredStyle:UIAlertControllerStyleAlert];
     [alertController addAction:([UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
@@ -208,6 +217,7 @@
     }])];
     [self presentViewController:alertController animated:YES completion:nil];
 }
+
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable))completionHandler{
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:prompt message:@"" preferredStyle:UIAlertControllerStyleAlert];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {

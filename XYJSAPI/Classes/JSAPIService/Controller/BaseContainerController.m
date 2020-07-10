@@ -7,13 +7,10 @@
 //
 
 #import "BaseContainerController.h"
-#import "PreLoadFilter.h"
-
 #import "ComponentDispatcher.h"
 @interface BaseContainerController ()
-@property(nonatomic,strong)PreLoadFilter * filter;
 @property(nonatomic,strong)ComponentDispatcher * dispatcher;
-
+@property(nonatomic,strong)PreLoadFilter * filter;
 @end
 
 @implementation BaseContainerController
@@ -27,7 +24,7 @@
 
 - (ComponentDispatcher *)dispatcher{
     if (!_dispatcher) {
-        _dispatcher = [ComponentDispatcher dispatcherWithContainer:self];;
+        _dispatcher = [ComponentDispatcher dispatcherWithContainer:self];
     }
     return _dispatcher;
 }
@@ -44,6 +41,14 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear: animated];
+	if (self.isNewURLPage) {
+		_filter = [PreLoadFilter filterWithContainer:self];
+		_dispatcher = [ComponentDispatcher dispatcherWithContainer:self];
+		[self registerHandler];
+		[self registerCustomMethodWithBridge:self.bridge];
+		[self reloadWebview];
+		_currentRenderUrl = self.renderUrl;
+	}
     //执行过滤
     [self.filter didFilter];
     if (_bridge) { return; }
@@ -59,9 +64,25 @@
     
     //加载页面
     [self renderWeb];
-    
+	_currentRenderUrl = self.renderUrl;
 }
 
+- (BOOL)isNewURLPage{
+	return ![_renderUrl isEqualToString:_currentRenderUrl];
+}
+
+- (void)reloadWebview{
+	[self hidenErrorView];
+	[self renderWeb];
+}
+
+- (void)hidenErrorView{
+	
+}
+
+- (void)showErroView:(NSString *)reason{
+	
+}
 
 - (void)registerCustomMethodWithBridge:(WebViewJavascriptBridge *)bridge{
     //注册自定义桥方法
@@ -135,7 +156,7 @@
 }
 - (NSString *)renderUrl{
     if (!_renderUrl) {
-        return @"http://10.238.103.86:7999?xy_orientation=landscape";
+        return @"http://10.238.103.86:7999";
     }
     return _renderUrl;
 }
