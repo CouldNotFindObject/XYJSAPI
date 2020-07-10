@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseContainerController.h"
-@class PreLoadFilter,FilterModel;
+
+@class PreLoadFilter,FilterModel,BaseContainerController;
 @protocol PreLoadFilterProtocol<NSObject>
 - (void)preLoadCompleteFilter:(nullable FilterModel *)filter;
 - (void)willPreLoadFilter:(nullable FilterModel *)filter;

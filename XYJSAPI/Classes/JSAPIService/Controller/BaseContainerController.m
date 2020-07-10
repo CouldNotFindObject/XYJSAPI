@@ -8,7 +8,8 @@
 
 #import "BaseContainerController.h"
 #import "ComponentDispatcher.h"
-@interface BaseContainerController ()
+#import "PreLoadFilter.h"
+@interface BaseContainerController ()<PreLoadFilterProtocol>
 @property(nonatomic,strong)ComponentDispatcher * dispatcher;
 @property(nonatomic,strong)PreLoadFilter * filter;
 @end
@@ -81,6 +82,22 @@
 }
 
 - (void)showErroView:(NSString *)reason{
+	
+}
+
+- (void)preLoadCompleteFilter:(FilterModel *)filter{
+	[self filterComplete:filter];
+}
+
+- (void)willPreLoadFilter:(FilterModel *)filter{
+	[self willFilter:filter];
+}
+
+- (void)filterComplete:(FilterModel *)filter{
+	
+}
+
+- (void)willFilter:(FilterModel *)filter{
 	
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "PreLoadFilter.h"
+#import "BaseContainerController.h"
 #import "FilterModel.h"
 #import "StringUtil.h"
 #import "ColorUtil.h"

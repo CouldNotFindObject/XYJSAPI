@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
-#import "PreLoadFilter.h"
 #import "WebViewJavascriptBridge.h"
 @class FilterModel;
 @interface BaseContainerController : UIViewController
-<WKNavigationDelegate,PreLoadFilterProtocol>
+<WKNavigationDelegate>
 
 /**
  需要渲染的URL路径
@@ -43,6 +42,7 @@
 - (BOOL)isNewURLPage;
 - (void)showErroView:(NSString *)reason;
 - (void)hidenErrorView;
+- (void)backToIndex;
 - (void)filterComplete:(FilterModel *)filter;
-- (void)backToIndex
+- (void)willFilter:(FilterModel *)filter;
 @end
