@@ -20,7 +20,11 @@
     NSLog(@"%@ %s",model.data,__func__);
     if (self.container.navigationController) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.container.navigationController popViewControllerAnimated:YES];
+           if (self.container.presentingViewController) {
+				[self.container.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+			}else{
+				[self.container.navigationController popViewControllerAnimated:YES];
+			}
             [model callSuccess:nil];
         });
     } else {
