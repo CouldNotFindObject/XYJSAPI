@@ -17,5 +17,6 @@
 #import "ComponentDispatcher.h"
 #import "LocationService.h"
 
-
+//验证版本号
+//version 0.1.15
 #endif /* XYJSAPI_h */

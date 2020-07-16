@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XYJSAPI'
-  s.version          = '0.1.14'
+  s.version          = '0.1.15'
   s.summary          = 'XYJSAPI 是js桥'
 
 
