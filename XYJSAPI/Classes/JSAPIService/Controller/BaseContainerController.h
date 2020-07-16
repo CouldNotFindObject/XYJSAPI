@@ -10,8 +10,7 @@
 #import <WebKit/WebKit.h>
 #import "WebViewJavascriptBridge.h"
 @class FilterModel;
-@interface BaseContainerController : UIViewController
-<WKNavigationDelegate>
+@interface BaseContainerController : UIViewController<WKNavigationDelegate,WKUIDelegate>
 
 /**
  需要渲染的URL路径
@@ -24,7 +23,7 @@
  */
 @property(nonatomic,strong,readonly)WebViewJavascriptBridge* bridge;
 
-
+@property (nonatomic, strong) WKWebView *webView;
 
 /**
  更改当前容器横竖屏
@@ -37,7 +36,6 @@
  */
 - (void)registerCustomMethodWithBridge:(WebViewJavascriptBridge *)bridge;
 - (void)renderWeb;
-- (id)getContainerWebView;
 - (void)reloadWebview;
 - (BOOL)isNewURLPage;
 - (void)showErroView:(NSString *)reason;

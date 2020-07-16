@@ -9,10 +9,10 @@
 #import "BaseContainerController.h"
 #import <WebKit/WebKit.h>
 @interface WKContainerController : BaseContainerController
-<WKNavigationDelegate,WKUIDelegate>
-@property(nonatomic,strong,readonly)WKWebView* webView;
 @property(nonatomic,assign) BOOL displayProgressView;
 @property (nonatomic, strong) UIProgressView *progressView;
 
+- (void)loadRequest:(NSURLRequest *)request;
 
+- (void)loadURL:(NSURL *)URL;
 @end

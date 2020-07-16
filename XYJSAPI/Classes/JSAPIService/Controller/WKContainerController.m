@@ -19,11 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _webView = [[NSClassFromString(@"WKWebView") alloc] initWithFrame:self.view.bounds];
-    _webView.navigationDelegate = self;
-    _webView.UIDelegate = self;
-    [_webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
-    [self.view insertSubview:_webView belowSubview:self.progressView];
+	[self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
+	[self.view insertSubview:self.webView belowSubview:self.progressView];
     
 }
 
@@ -34,12 +31,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-
-- (id)getContainerWebView{
-    return self.webView;
 }
 
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {

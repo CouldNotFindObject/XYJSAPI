@@ -142,15 +142,20 @@
     NSAssert(0, @"子类需重写该方法");
 }
 
+- (WKWebView *)webView{
+	if (_webView == nil) {
+		_webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
+		_webView.navigationDelegate = self;
+		_webView.UIDelegate = self;
+	}
+	return _webView;
+}
+
 - (void)initWebViewJavascriptBridge{
-    _bridge = [WebViewJavascriptBridge bridgeForWebView:[self getContainerWebView]];
+	_bridge = [WebViewJavascriptBridge bridgeForWebView:self.webView];
     [_bridge setWebViewDelegate:self];
 }
 
-- (id)getContainerWebView{
-    NSAssert(0, @"子类需重写该方法");
-    return nil;
-}
 - (void)js_callBackButton{
     [_bridge callHandler:@"backbutton"];
 }
