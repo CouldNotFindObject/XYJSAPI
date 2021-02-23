@@ -55,7 +55,7 @@ typedef void (^AMapLocatingCompletionBlock)(CLLocation *location, AMapLocationRe
 ///获取被监控的region集合。
 @property (nonatomic, readonly, copy) NSSet *monitoredRegions;
 
-///检测是否存在虚拟定位风险，默认为NO，不检测。 \n注意:设置为YES时，单次定位通过 AMapLocatingCompletionBlock 的error给出虚拟定位风险提示；连续定位通过 amapLocationManager:didFailWithError: 方法的error给出虚拟定位风险提示。error格式为error.domain==AMapLocationErrorDomain; error.code==AMapLocationErrorRiskOfFakeLocation;
+///检测是否存在虚拟定位风险，默认为NO，不检测。 \n注意:设置为YES时，单次定位通过 AMapLocatingCompletionBlock 的error给出虚拟定位风险提示；连续定位通过 amapLocationManager:didFailWithError: 方法的error给出虚拟定位风险提示。error格式为 error.domain==AMapLocationErrorDomain; error.code==AMapLocationErrorRiskOfFakeLocation; \n附带的error的详细信息参考 error.localizedDescription 中的描述以及 error.userInfo 中的信息(error.userInfo.AMapLocationRiskyLocateResult 表示有虚拟风险的定位结果; error.userInfo.AMapLocationAccessoryInfo 表示外接辅助设备信息)。
 @property (nonatomic, assign) BOOL detectRiskOfFakeLocation;
 
 /**
@@ -119,11 +119,19 @@ typedef void (^AMapLocatingCompletionBlock)(CLLocation *location, AMapLocationRe
 
 #pragma mark - AMapLocationManagerDelegate
 
-
 ///AMapLocationManagerDelegate 协议定义了发生错误时的错误回调方法，连续定位的回调方法等。
 @protocol AMapLocationManagerDelegate <NSObject>
 
 @optional
+
+/**
+ *  @brief 当plist配置NSLocationAlwaysUsageDescription或者NSLocationAlwaysAndWhenInUseUsageDescription，并且[CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined，会调用代理的此方法。
+     此方法实现调用申请后台权限API即可：[locationManager requestAlwaysAuthorization](必须调用,不然无法正常获取定位权限)
+ *  @param manager 定位 AMapLocationManager 类。
+ *  @param locationManager  需要申请后台定位权限的locationManager。
+ *  @since 2.6.2
+ */
+- (void)amapLocationManager:(AMapLocationManager *)manager doRequireLocationAuth:(CLLocationManager*)locationManager;
 
 /**
  *  @brief 当定位发生错误时，会调用代理的此方法。

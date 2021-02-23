@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'XYJSAPI'
-  s.version          = '0.1.15'
-  s.summary          = 'XYJSAPI 是js桥'
+  s.version          = '0.1.16'
+  s.summary          = '更新config.plist文件位置'
 
 
   s.description      = <<-DESC

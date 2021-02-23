@@ -82,7 +82,6 @@
 		B4256831207B1DBE0073CCBC /* DispatcherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatcherModel.h; sourceTree = "<group>"; };
 		B4256832207B1DBE0073CCBC /* FilterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterModel.m; sourceTree = "<group>"; };
 		B4256833207B1DBE0073CCBC /* JSBLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBLocation.h; sourceTree = "<group>"; };
-		B4256834207B1DBE0073CCBC /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		B4256837207B1DBE0073CCBC /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
 		B4256838207B1DBE0073CCBC /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
 		B4256839207B1DBE0073CCBC /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
@@ -220,9 +219,9 @@
 				B4256819207B1DBE0073CCBC /* JSAPIService.h */,
 				B425683F207B1DBE0073CCBC /* JSAPIService.m */,
 				B4256835207B1DBE0073CCBC /* Lib */,
+				B4256814207B1DBE0073CCBC /* Util */,
 				B425682B207B1DBE0073CCBC /* Model */,
 				B4256843207B1DBE0073CCBC /* Service */,
-				B4256814207B1DBE0073CCBC /* Util */,
 			);
 			name = JSAPIService;
 			path = XYJSAPI/Classes/JSAPIService;
@@ -280,7 +279,6 @@
 			children = (
 				B425682C207B1DBE0073CCBC /* ComponentModel.h */,
 				B4256830207B1DBE0073CCBC /* ComponentModel.m */,
-				B4256834207B1DBE0073CCBC /* config.plist */,
 				B4256831207B1DBE0073CCBC /* DispatcherModel.h */,
 				B425682F207B1DBE0073CCBC /* DispatcherModel.m */,
 				B425682E207B1DBE0073CCBC /* FilterModel.h */,
